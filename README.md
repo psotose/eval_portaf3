@@ -42,3 +42,49 @@
 ## El Lenguaje de Manipulación de Datos (DML) permite **agregar, modificar y eliminar** registros en las tablas de la base de datos. A continuación, se presentan ejemplos aplicados al modelo `Clientes` y `Pedidos`.
 
 ### Desarrollo en archivo punto3.sql
+
+# PUNTO 5:
+# Diagrama entidad-relación (ERD) para representar la estructura básica de una tienda online. Incluye las entidades esenciales para gestionar productos, clientes, pedidos y métodos de pago, y sus relaciones.
+
+![Diagrama ERD](assets/img/diagrama.png)
+
+## Entidades y atributos
+
+### **1. Clientes**
+- `id_cliente` (PK)
+- `nombre`
+- `email`
+- `telefono`
+- `direccion`
+
+### **2. Productos**
+- `id_producto` (PK)
+- `nombre`
+- `descripcion`
+- `precio`
+- `stock`
+
+### **3. Pedidos**
+- `id_pedido` (PK)
+- `fecha`
+- `total`
+- `id_cliente` (FK)
+- `id_metodo_pago` (FK)
+
+### **4. Métodos de Pago**
+- `id_metodo_pago` (PK)
+- `descripcion`
+
+### **5. Detalle_Pedido**
+- `id_pedido` (FK)
+- `id_producto` (FK)
+- `cantidad`
+- `precio_unitario`
+
+## Relaciones
+
+- Un **cliente** puede realizar muchos **pedidos** → Relación 1:N
+- Un **pedido** está asociado a un solo **cliente**
+- Un **pedido** puede tener muchos **productos** y un producto puede estar en muchos pedidos → Relación N:M mediante `Detalle_Pedido`
+- Un **pedido** utiliza un solo **método de pago**, pero un método de pago puede ser usado en muchos pedidos → Relación 1:N
+
