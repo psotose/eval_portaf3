@@ -30,5 +30,15 @@
 - Las **relaciones entre tablas** se logran mediante las **claves primarias y foráneas**, evitando duplicar información.
 - Este modelo facilita operaciones como **búsquedas, actualizaciones o eliminación de datos**, manteniendo la **integridad referencial**.
 
-## Breve ejemplo en archivo punto1.sql
+### Breve ejemplo en archivo punto1.sql
 
+# PUNTO 2:
+# Consultas SQL sobre el modelo de datos
+
+### Desarrollo en archivo punto2.sql
+
+# PUNTO 3:
+# Manipulación de datos con SQL (DML)
+## El Lenguaje de Manipulación de Datos (DML) permite **agregar, modificar y eliminar** registros en las tablas de la base de datos. A continuación, se presentan ejemplos aplicados al modelo `Clientes` y `Pedidos`.
+
+### Desarrollo en archivo punto3.sql
